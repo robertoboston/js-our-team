@@ -40,6 +40,8 @@ for(let i= 0; i<team.length; i++){
 
     let divItem = document.createElement('div')
 
+    divItem.classList.add('card')
+
     document.querySelector('.team-group').appendChild(divItem)
 
     let h1 = document.createElement('h1')
