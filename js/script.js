@@ -44,21 +44,29 @@ for(let i= 0; i<team.length; i++){
 
     document.querySelector('.team-group').appendChild(divItem)
 
-    let h1 = document.createElement('h1')
-
-    document.querySelector('.team-group').appendChild(h1)
-
     let img= document.createElement('img')
 
-    document.querySelector('.team-group').appendChild(img)
+    divItem.appendChild(img)
 
+    let h1 = document.createElement('h1')
+
+    h1.classList.add('title')
+
+    divItem.appendChild(h1)
+
+    let h2 = document.createElement('h2')
+
+    divItem.appendChild(h2)
+
+    h2.classList.add('subtitle')
 
 
 
     for(let key in teamGroup){
 
         console.log(teamGroup[key])
-        h1.innerText = `${teamGroup.name}  ${teamGroup.role}`
+        h1.innerText = teamGroup.name
+        h2.innerText = teamGroup.role
         img.src ='./img/'+ teamGroup.image
 
     }
