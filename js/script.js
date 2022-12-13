@@ -60,18 +60,12 @@ for(let i= 0; i<team.length; i++){
 
     h2.classList.add('subtitle')
 
+    h1.innerText = teamGroup.name
+
+    h2.innerText = teamGroup.role
+
+    img.src ='./img/'+ teamGroup.image
 
 
-    for(let key in teamGroup){
-
-        console.log(teamGroup[key])
-        h1.innerText = teamGroup.name
-        h2.innerText = teamGroup.role
-        img.src ='./img/'+ teamGroup.image
-
-    }
-
-    
-    
  
 }
