@@ -1,3 +1,5 @@
+
+// MILESTONE 0
 let team = [
 
     {
@@ -36,8 +38,14 @@ let team = [
 for(let i= 0; i<team.length; i++){
 
     let teamGroup = team[i]
-    console.log(teamGroup)
 
+    // MILESTONE 1 ***************
+    for(let key in teamGroup){
+
+        console.log(teamGroup[key])
+        
+    }
+    // **************************
     let divItem = document.createElement('div')
 
     divItem.classList.add('card')
